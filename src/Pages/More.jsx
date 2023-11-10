@@ -29,7 +29,7 @@ const More = () => {
         </div>
       </div>
       <div className="user-feedback">
-        
+        <h1>Join thousands of learners who are achieving their goals with Coursera Plus</h1>
       </div>
     </div>
   )

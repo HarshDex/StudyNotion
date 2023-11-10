@@ -63,9 +63,20 @@
     margin-bottom: 10%;
 }
 .user-feedback{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     height: 70vh;
     width: 100%;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0.142);
     position: absolute;
     top: 70%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+}
+.user-feedback h1{
+    color: rgb(255, 255, 255);
+    font-size: 3em;
 }
