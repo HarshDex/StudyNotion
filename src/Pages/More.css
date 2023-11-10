@@ -1,0 +1,71 @@
+.courses-container{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.sale-container{
+    position: relative;
+    top: 5%;
+    height: 50vh;
+    width: 100%;
+}
+.sale-container p{
+    position: absolute;
+    top : 25%;
+    left :  50%;
+    font-size: 5em;
+}
+.sale-container-image{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    left: 2%;
+}
+.sale-container-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sale-container h5{
+    position: absolute;
+    top : 70%;
+    left :  53%;
+    font-size: .7em;
+}
+.brand-deals{
+    display: flex;
+    gap: 5%;
+    position: absolute;
+    top: 40%;
+    height: 50vh;
+    width: 100%;
+    margin-left: 2%;
+}
+.brand{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3%;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+}
+.brand p span{
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.brand img{
+    height: 70%;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10%;
+}
+.user-feedback{
+    height: 70vh;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    top: 70%;
+}

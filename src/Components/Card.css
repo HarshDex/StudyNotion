@@ -1,0 +1,41 @@
+.single-card{
+    height: 40vh;
+    width: 20vw;
+    /* border : 1px solid rgba(255, 255, 255, 0.303); */
+    border-radius: 10px;
+    overflow: hidden;
+    margin : 2%;
+}
+.course-image{
+    height: 50%;
+    width: 100%;
+    margin-bottom: 7%;
+}
+.course-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.course-description h2{
+    font-size: .9em;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.course-description h3{
+    font-size: .9em;
+    margin-left: 2%;
+    /* text-align: center; */
+}
+.course-button{
+    background-color: transparent;
+    border-radius: 10px;
+    font-weight: 800;
+    border: none;
+    margin-left: 2%;
+    margin-top: 3%;
+    cursor : pointer;
+    transition: all ease .3s;
+}
+.course-button:hover{
+    color: yellow;
+}

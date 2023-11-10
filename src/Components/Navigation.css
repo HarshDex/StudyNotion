@@ -1,0 +1,45 @@
+.navigation-bar ul{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(3, 3, 30);
+    color: white;
+    padding: 2%;
+    text-decoration: none;
+    /* position: fixed; */
+    /* z-index: 99; */
+}
+.navigation-bar ul li{
+    list-style-type: none;
+    font-size: 1.2em;
+    
+}
+.logo-part{
+    display: flex;
+    gap: 10px;
+}
+.logo-part img{
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+}
+.authentication{
+    width:15%;
+    display: flex;
+    gap: 10%;
+}
+.authentication button{
+    padding : 3% 6%;
+    border-radius : 10px;
+    border: none;
+    text-decoration:none;
+    background-color: transparent;
+}
+li .active{
+    color: white;
+}
+button .active{
+    color: white;
+}

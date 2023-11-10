@@ -1,0 +1,100 @@
+.login-container{
+    position: relative;
+    height: 80vh;
+    width: 40vw;
+    margin-left: 10%;
+    /* overflow: hidden; */
+}
+.login-container-heading{
+    margin : 3% 0;
+}
+.login-container-heading h1{
+    font-size: 3em;
+}
+.login-container-heading p{
+    font-size: .7em;
+}
+.login-container-heading span{
+    font-size: .7em;
+    font-style: italic;
+    color : rgb(0, 191, 255);
+}
+.login-container-credential{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.login-container-credential input{
+    /* color: black; */
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.075);
+    border: none;
+    height: 2em;
+    width: 60%;
+    margin : .5em 0;
+    border-radius: 10px;
+    padding-left: 3%;
+}
+.login-container button{
+    display: block;
+    /* margin : 1em 0; */
+    color:  black;
+}
+
+.login-container-credential-password button{
+    position: relative;
+    background-color: transparent;
+    color: cyan;
+    border: none;
+    outline: none;
+    font-size: .5em;
+    left: 45%;
+}
+
+.login-container-credential p{
+    font-size: .8em;
+}
+.login-signin{
+    margin-top: 2%;
+    color: black;
+    background-color: rgb(235, 235, 21);
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 60%;
+    margin-bottom: 1%;
+}
+.login-buttons span{
+    position: relative;
+    margin-left :30%;
+}
+.login-signin-with-google{
+    margin-top: 1%;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 2.5em;
+    width: 60%;
+
+}
+.login-image{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    height: 50%;
+    width: 27%;
+    background-color: rgb(100, 100, 217);
+}
+.login-image-one{
+    position: relative;
+    left: -8%;
+    top: -4%;
+}
+.login-image-one img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
