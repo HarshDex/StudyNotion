@@ -2,6 +2,7 @@ import React from 'react'
 import './Card.css'
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 const Card = (obj) => {
   const onEnrollHandler = () =>{
     toast.success("This feature is yet to be added",{
@@ -20,7 +21,7 @@ const Card = (obj) => {
             <h3>Rs{obj.fees}</h3>
         </div>
         <button className="course-button" onClick={onEnrollHandler}>
-          Enroll Now
+          <Link to = "/course">Enroll Now</Link>
         </button>
     </div>
   )

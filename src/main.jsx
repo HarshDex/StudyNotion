@@ -8,16 +8,22 @@ import Courses from './Pages/Courses.jsx'
 import More from './Pages/More.jsx'
 import Login from './Pages/Login.jsx'
 import SignUp from "./Pages/SignUp.jsx"
+import CourseInsight from './Pages/CourseInsight.jsx'
 const router = createBrowserRouter([
   {
     path : '/',
     element : <App/>,
     children : [
       {path : '',element : <Home/>},
-      {path : 'Courses',element : <Courses/>},
+      {
+        path : 'Courses',
+        element : <Courses/>,
+      },
       {path : 'More',element : <More/>},
       {path : 'login',element : <Login/>},
-      {path : 'signUp',element : <SignUp/>}
+      {path : 'signUp',element : <SignUp/>},
+      {path : '*',element : <>Page Not found</>},
+      {path : 'course',element : <CourseInsight/>}
     ]
   }
 ])

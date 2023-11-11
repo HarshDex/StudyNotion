@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <div className="home-container">
         <div className="home-container-part1">
-          <h1>Start Learning with us now</h1>
+          <h1>Start Learning with us Now & Forever</h1>
           <h2></h2>
           <p>Embark on a transformative learning journey with our engaging e-learning platform. Explore a world of knowledge, learn at your own pace, and empower your future.</p>
           <Link to = "/courses">
