@@ -3,6 +3,9 @@ import './Home.css';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
+import arrow
+
+from '../assets/arrow.png'
 const Home = () => {
   const onClickHome = () =>{
     toast.success("You are all set to go!!!",{
@@ -19,7 +22,7 @@ const Home = () => {
           <h2></h2>
           <p>Embark on a transformative learning journey with our engaging e-learning platform. Explore a world of knowledge, learn at your own pace, and empower your future.</p>
           <Link to = "/courses">
-              <button  className='home-button' onClick={onClickHome}>Start Learning Now
+              <button  className='home-button' onClick={onClickHome}>Start Learning Now →
             </button> 
           </Link>
         </div>
@@ -47,8 +50,31 @@ const Home = () => {
           <p>Practice and improve your interview skills with virtual feedback.</p>
         </div>
       </div>
+      <div className="home-page-part3">
+        <h1>Take the first step toward your new career</h1>
+        <h3>Get professional-level training and earn a credential recognized by leading companies.</h3>
+        <div className="home-page-part3-containers">
+          <div className="home-page-part3-container">
+            <img src={arrow} alt="" />
+            <h3>Prior experience optional</h3>
+            <p>Build job-ready skills, even if you're new to the field.</p>
+            <p>2,284,150</p>
+            <p>job openings across entry-level Professional Certificate fields</p>
+          </div>
+          <div className="home-page-part3-container">Second</div>
+          <div className="home-page-part3-container">Third</div>
+        </div>
+      </div>
     </>
   )
 }
 
 export default Home
+
+// Prior experience optional
+
+// Build job-ready skills, even if you’re new to the field.
+
+// 2,284,150
+
+// job openings across entry-level Professional Certificate fields¹

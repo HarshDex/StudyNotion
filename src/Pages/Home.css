@@ -34,7 +34,7 @@
     margin-left: 10%;
 }
 .home-button{
-    margin-top: 4%;
+    margin-top: 7%;
     height : 7%;
     margin-left: 10%;
     width: 30%;
@@ -44,7 +44,6 @@
     border :none;
     color: black;
     cursor: pointer;
-
 }
 .home-container-part1-image1{
     height: 45vh;
@@ -71,7 +70,7 @@
 }
 .home-container-part3{
     display: flex;
-    height: 100vh;
+    height: 55vh;
     width: 100vw;
 }
 .home-container-part3-image{
@@ -107,4 +106,30 @@
 .home-container-part3-text p{
     font-size: .8em;
     margin-bottom: 3%;
+}
+.home-page-part3{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.home-page-part3 h1{
+    font-size: 3em;
+    font-weight : bolder;
+    margin-top: 10%;
+}
+.home-page-part3-containers{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home-page-part3-container{
+    display: flex;
+    margin-top: 3%;
+    height: 70vh;
+    width: 25vw;
+    margin-bottom: 5%;
+    background-color: rgba(12, 0, 13, 0.642);
+    flex-direction: column;
 }
