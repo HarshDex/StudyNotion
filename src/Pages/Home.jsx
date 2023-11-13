@@ -55,7 +55,7 @@ const Home = () => {
         <h3>Get professional-level training and earn a credential recognized by leading companies.</h3>
         <div className="home-page-part3-containers">
           <div className="home-page-part3-container">
-            <img src={arrow} alt="" />
+            {/* <img src={arrow} alt="" /> */}
             <h3>Prior experience optional</h3>
             <p>Build job-ready skills, even if you're new to the field.</p>
             <p>2,284,150</p>
