@@ -3,9 +3,7 @@ import './Home.css';
 import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
-import arrow
-
-from '../assets/arrow.png'
+import arrow from '../assets/arrow.png'
 const Home = () => {
   const onClickHome = () =>{
     toast.success("You are all set to go!!!",{

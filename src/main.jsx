@@ -9,6 +9,7 @@ import More from './Pages/More.jsx'
 import Login from './Pages/Login.jsx'
 import SignUp from "./Pages/SignUp.jsx"
 import CourseInsight from './Pages/CourseInsight.jsx'
+import SingelCourse from './Pages/SingelCourse.jsx'
 const router = createBrowserRouter([
   {
     path : '/',
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
       {path : 'login',element : <Login/>},
       {path : 'signUp',element : <SignUp/>},
       {path : '*',element : <>Page Not found</>},
-      {path : 'course',element : <CourseInsight/>}
+      {path : 'course/:courseId',element : (<SingelCourse/>)}
     ]
   }
 ])

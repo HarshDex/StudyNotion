@@ -1,6 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Login.css'
+import showimg from '../assets/show.png'
 const Login = () => {
+  const[formData,setFormData] = useState({email : '',password : ''})
+  const [showPassword,setShowPassword] = useState(false);
+  const onClickPasswordHandler = () =>{
+    setShowPassword(!showPassword);
+    setDflag(!Dflag);
+  }
+  const onSaveHanlder = (event) =>{
+    setFormData((prevData)=>(
+      {
+        ...prevData,
+        [event.target.name] : event.target.value
+      }
+    ))
+  }
+  const[Dflag,setDflag] = useState(false);
   return (
     <>
       <div className="login-container">
@@ -12,15 +28,19 @@ const Login = () => {
         <div className="login-container-credential">
           <div className="login-container-credential-mail">
             <p>Email*</p>
-            <input type="mail" name="Email" id="Email" />
+            <input type="mail" name="email" id="Email"  placeholder='Enter your email' value = {formData.email} onChange={onSaveHanlder}/>
           </div>
           <div className="login-container-credential-password">
               <p>Password*</p>
-              <input type="password" name = 'password' id = 'password'/>
+              <input type={showPassword ? ('text') : ('password')}  name = 'password' id = 'password' placeholder='Enter your Password' value = {formData.password} onChange={onSaveHanlder}/>
+              <div className="eye-button" onClick = {onClickPasswordHandler}>
+                <img src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699007-icon-21-eye-hidden-512.png" alt="" className='hide' style = {{display : Dflag ? 'none' : 'block'}} />
+                <img src={showimg} alt=""  className='show' style = {{display : Dflag ? 'block' : 'none'}}/>
+              </div>
             <button>Forgot Password</button>
           </div>
           <div className="login-buttons">
-            <button className="login-signin">Sign In</button>
+            <button className="login-signin" onClick={onSaveHanlder}>Sign In</button>
             <span>OR</span>
             <button className='login-signin-with-google'>Sign In with google</button>
           </div>
